@@ -1,6 +1,4 @@
 #include <stdio.h>
-//fiz meu desafio nivel novato
-
 
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das cartas

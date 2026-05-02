@@ -15,6 +15,7 @@ int main() {
   float capta1, capta2; //pib per capta
   int pontotur1, pontotur2; //quantidade de pontos turisticos
   float densidade1, densidade2; //densidade populacional
+
   // Área para entrada de dados
   printf ("Este é um menu para cadastro das cartas do desafio Super Trunfo\n");
   printf ("Por favor siga as etapas à seguir para cadastrar até 2 cartas no sistema\n");
@@ -88,9 +89,12 @@ int main() {
   printf ("Sua população é de: %i Habitantes \n", populacao1); //usa se %d ou %i para int
   printf ("Sua área é de: %.3f Km² \n",area1);
   printf ("O PIB é de: R$ %.2f bi\n", pib1);
-  printf ("O PIB per capta é de : %.10f \n", capta1);
   printf ("Na cidade de %s existem %i pontos turísticos \n", cidade1, pontotur1);
+  printf ("------------------------------------------------------ \n");
+  printf ("-----------------------Cálculos----------------------- \n");
+  printf ("O PIB per capta de %s é de : %.10f \n",cidade1, capta1); //se der 0 é porque o valor necessita de mais casas decimais
   printf ("Densidade populacional de: %.2f Habitantes por Km²\n", densidade1);
+  printf ("------------------------------------------------------ \n");
   printf ("------------------------------------------------------ \n");
 
   //exibindo cadastro da carta Nº 2
@@ -100,10 +104,13 @@ int main() {
   printf ("Cidade: %s \n", cidade2);
   printf ("Sua população é de: %i Habitantes \n", populacao2);
   printf ("Sua área é de: %.3f Km² \n", area2);
-  printf ("O PIB é de: R$ %.2f bi\n", pib2);
-  printf ("O PIB per capta é de : %.10f \n", capta2); //se der 0 é porque o valor necessita de mais casas decimais
+  printf ("O PIB é de: R$ %.2f bi\n", pib2); 
   printf ("Na cidade de %s existem %i pontos turísticos \n", cidade2, pontotur2);
+  printf ("------------------------------------------------------ \n");
+  printf ("-----------------------Cálculos----------------------- \n");
+  printf ("O PIB per capta de %s é de : %.10f \n",cidade2, capta2);
   printf ("Densidade populacional de: %.2f Habitantes por Km²\n", densidade2);
+  printf ("------------------------------------------------------ \n");
   printf ("------------------------------------------------------ \n");
 
 

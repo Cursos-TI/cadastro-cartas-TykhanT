@@ -6,16 +6,16 @@
 
 int main() {
   // Área para definição das variáveis para armazenar as propriedades das cidades
-  //nome das cidades de 1 a 4 (cidades e codigos das cartas não pode conter espaços)
-  char codigo1 [10], codigo2 [10], codigo3 [10], codigo4 [10];  //codigo das cartas não ler com &codigonum pois da erro usar sem o & para strings
-  char cidade1 [20], cidade2 [20], cidade3 [20], cidade4 [20];  //nome das cidades 
-  int populacao1, populacao2, populacao3, populacao4; //população
-  float area1, area2, area3, area4; //area em km² // ler float usa se %f // ler double usa se %lf
-  float pib1, pib2, pib3, pib4; //pib das cidades 
-  int pontotur1, pontotur2, pontotur3, pontotur4; //quantidade de pontos turisticos
+  //nome das cidades de 1 e 2 (cidades e codigos das cartas não pode conter espaços)
+  char codigo1 [10], codigo2 [10];  //codigo das cartas não ler com &codigonum pois da erro usar sem o & para strings
+  char cidade1 [20], cidade2 [20];  //nome das cidades 
+  int populacao1, populacao2; //população
+  float area1, area2; //area em km² // ler float usa se %f // ler double usa se %lf
+  float pib1, pib2; //pib das cidades 
+  int pontotur1, pontotur2; //quantidade de pontos turisticos
   // Área para entrada de dados
   printf ("Este é um menu para cadastro das cartas do desafio Super Trunfo\n");
-  printf ("Por favor siga as etapas à seguir para cadastrar até 4 cartas no sistema\n");
+  printf ("Por favor siga as etapas à seguir para cadastrar até 2 cartas no sistema\n");
 
 
   printf ("Agora por favor digite o cadastro da cidade número 1: \n"); //iniciando cadastro da carta número 1
@@ -65,54 +65,7 @@ int main() {
   printf ("----------------------Concluído!---------------------- \n");
   printf ("------------------------------------------------------ \n");
 
-  printf ("Agora por favor digite o cadastro da cidade número 3: \n"); //iniciando cadastro da carta número 3
-  printf ("Agora digite o código da carta (Utilize uma letra seguido de 3 números sem espaçamento): \n");
-  scanf (" %s", codigo3);
-
-  printf ("Agora digite o nome de uma cidade (sem espaço): \n");
-  scanf (" %s", cidade3);
-
-  printf ("Digite a população dessa cidade: \n");
-  scanf (" %i", &populacao3);
-
-  printf ("Digite agora a área (em Km²): \n");
-  scanf (" %f", &area3);
-
-  printf ("Digite agora o PIB da cidade cadastrada (em bi): \n");
-  scanf (" %f", &pib3);
-
-  printf ("Para finalizar digite agora a quantidade de pontos turísticos na cidade: \n");
-  scanf (" %i", &pontotur3);
-
-  printf ("------------------------------------------------------ \n");
-  printf ("----------------------Concluído!---------------------- \n");
-  printf ("------------------------------------------------------ \n");
-
-  printf ("Agora por favor digite o cadastro da cidade número 4: \n"); //iniciando cadastro da carta número 4
-
-  printf ("Agora digite o código da carta (Utilize uma letra seguido de 3 números sem espaçamento): \n");
-  scanf (" %s", codigo4);
-
-  printf ("Agora digite o nome de uma cidade (sem espaço): \n");
-  scanf (" %s", cidade4);
-
-  printf ("Digite a população dessa cidade: \n");
-  scanf (" %i", &populacao4);
-
-  printf ("Digite agora a área (em Km²): \n");
-  scanf (" %f", &area4);
-
-  printf ("Digite agora o PIB da cidade cadastrada (em bi): \n");
-  scanf (" %f", &pib4);
-
-  printf ("Para finalizar digite agora a quantidade de pontos turísticos na cidade: \n");
-  scanf (" %i", &pontotur4);
-
-  printf ("------------------------------------------------------ \n");
-  printf ("----------------------Concluído!---------------------- \n");
-  printf ("------------------------------------------------------ \n");
-
-  //agora mostrar o resultado das cartas 1 a 4 corretamente com todas as informações registradas
+  //agora mostrar o resultado das cartas 1 e 2 corretamente com todas as informações registradas
   // Área para exibição dos dados da cidade
 
   //exibindo cadastro da carta Nº 1
@@ -120,7 +73,7 @@ int main() {
   printf ("Sua carta de número 1 é: \n");
   printf ("Código da carta: %s \n", codigo1);
   printf ("Cidade: %s \n", cidade1);
-  printf ("Sua população é de: %i Habitantes \n", populacao1);
+  printf ("Sua população é de: %i Habitantes \n", populacao1); //usa se %d ou %i para int
   printf ("Sua área é de: %.3f Km² \n",area1);
   printf ("O PIB é de: R$ %.2f bi\n", pib1);
   printf ("Na cidade de %s existem %i pontos turísticos \n", cidade1, pontotur1);
@@ -135,28 +88,6 @@ int main() {
   printf ("Sua área é de: %.3f Km² \n", area2);
   printf ("O PIB é de: R$ %.2f bi\n", pib2);
   printf ("Na cidade de %s existem %i pontos turísticos \n", cidade2, pontotur2);
-  printf ("------------------------------------------------------ \n");
-
-  //exibindo cadastro da carta Nº 3
-
-  printf ("Sua carta de número 3 é: \n");
-  printf ("Código da carta: %s \n", codigo3);
-  printf ("Cidade: %s \n", cidade3);
-  printf ("Sua população é de: %i Habitantes \n", populacao3);
-  printf ("Sua área é de: %.3f Km² \n",area3);
-  printf ("O PIB é de: R$ %.2f bi\n", pib3);
-  printf ("Na cidade de %s existem %i pontos turísticos \n", cidade3, pontotur3);
-  printf ("------------------------------------------------------ \n");
-
-  //exibindo cadastro da carta Nº 4
-
-  printf ("Sua carta de número 4 é: \n");
-  printf ("Código da carta: %s \n", codigo4);
-  printf ("Cidade: %s \n", cidade4);
-  printf ("Sua população é de: %i Habitantes \n", populacao4);
-  printf ("Sua área é de: %.3f Km² \n", area4);
-  printf ("O PIB é de: R$ %.2f bi\n", pib4);
-  printf ("Na cidade de %s existem %i pontos turísticos \n", cidade4, pontotur4);
   printf ("------------------------------------------------------ \n");
 
 

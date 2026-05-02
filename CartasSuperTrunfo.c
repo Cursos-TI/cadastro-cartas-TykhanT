@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
+// Desafio Super Trunfo - Cidades
 // Tema 1 - Cadastro das cartas
 // Objetivo: No nível novato você deve criar as cartas representando as cidades utilizando scanf para entrada de dados e printf para exibir as informações.
 
@@ -9,10 +9,12 @@ int main() {
   //nome das cidades de 1 e 2 (cidades e codigos das cartas não pode conter espaços)
   char codigo1 [10], codigo2 [10];  //codigo das cartas não ler com &codigonum pois da erro usar sem o & para strings
   char cidade1 [20], cidade2 [20];  //nome das cidades 
-  int populacao1, populacao2; //população
+  int populacao1, populacao2; //população com num inteiro
   float area1, area2; //area em km² // ler float usa se %f // ler double usa se %lf
   float pib1, pib2; //pib das cidades 
+  float capta1, capta2; //pib per capta
   int pontotur1, pontotur2; //quantidade de pontos turisticos
+  float densidade1, densidade2; //densidade populacional
   // Área para entrada de dados
   printf ("Este é um menu para cadastro das cartas do desafio Super Trunfo\n");
   printf ("Por favor siga as etapas à seguir para cadastrar até 2 cartas no sistema\n");
@@ -65,6 +67,16 @@ int main() {
   printf ("----------------------Concluído!---------------------- \n");
   printf ("------------------------------------------------------ \n");
 
+  // calcular pib per capta 1 e 2
+
+  capta1 = pib1 / (float) populacao1; //como populacao1 náo é num inteiro usa se o casting correto (float) antes da variavel
+  capta2 = pib2 / (float) populacao2;
+
+  //calcular densidade populacional 1 e 2
+
+  densidade1 = (float) populacao1 / area1;
+  densidade2 = (float) populacao2 / area2;
+
   //agora mostrar o resultado das cartas 1 e 2 corretamente com todas as informações registradas
   // Área para exibição dos dados da cidade
 
@@ -76,7 +88,9 @@ int main() {
   printf ("Sua população é de: %i Habitantes \n", populacao1); //usa se %d ou %i para int
   printf ("Sua área é de: %.3f Km² \n",area1);
   printf ("O PIB é de: R$ %.2f bi\n", pib1);
+  printf ("O PIB per capta é de : %.10f \n", capta1);
   printf ("Na cidade de %s existem %i pontos turísticos \n", cidade1, pontotur1);
+  printf ("Densidade populacional de: %.2f Habitantes por Km²\n", densidade1);
   printf ("------------------------------------------------------ \n");
 
   //exibindo cadastro da carta Nº 2
@@ -87,7 +101,9 @@ int main() {
   printf ("Sua população é de: %i Habitantes \n", populacao2);
   printf ("Sua área é de: %.3f Km² \n", area2);
   printf ("O PIB é de: R$ %.2f bi\n", pib2);
+  printf ("O PIB per capta é de : %.10f \n", capta2); //se der 0 é porque o valor necessita de mais casas decimais
   printf ("Na cidade de %s existem %i pontos turísticos \n", cidade2, pontotur2);
+  printf ("Densidade populacional de: %.2f Habitantes por Km²\n", densidade2);
   printf ("------------------------------------------------------ \n");
 
 

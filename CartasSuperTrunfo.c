@@ -69,7 +69,7 @@ int main() {
 
   // calcular pib per capta 1 e 2
 
-  capta1 = pib1 / (float) populacao1; //como populacao1 náo é num inteiro usa se o casting correto (float) antes da variavel
+  capta1 = pib1 / (float) populacao1; //como populacao1 náo é num float usa se o casting correto (float) antes da variavel
   capta2 = pib2 / (float) populacao2;
 
   //calcular densidade populacional 1 e 2

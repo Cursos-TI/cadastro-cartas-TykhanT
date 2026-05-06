@@ -131,7 +131,7 @@ int main() {
   resultadoden = densidade1 > densidade2;
   resultadosup = superpoder1 > superpoder2;
 
-  //mostrar o resultado das comparações agora
+  //mostrar o resultado das comparações agora com o valor 0 e 1
   printf ("------------------------------------------------------ \n");
   printf ("------------------------------------------------------ \n");
   printf ("-----------------------RESULTADO---------------------- \n");

@@ -147,5 +147,15 @@ int main() {
   printf ("Densidade populacional carta 1 venceu?, %d \n", resultadoden);
   printf ("Superpoder da carta 1 venceu?, %d \n", resultadosup);
 
+  printf ("------------------------------------------------------ \n");
+  printf ("critério bonus!!\n");
+  printf ("POPULAÇAO DA CIDADE \n");
+
+  if (populacao1 > populacao2) {
+    printf ("população 1 ganhou\n");
+  } else {
+    printf ("população 2 ganhou\n");
+  }
+
 return 0;
 } 
